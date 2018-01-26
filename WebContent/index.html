@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="moviesApp">
+<head>
+	<meta charset="utf-8">
+	<title>Movies</title>
+	<link rel="stylesheet" href="app.css" />
+	<link rel="stylesheet" href="js/bootstrap.css" />
+	
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="app.js"></script>
+	
+	
+</head>
+ <body ng-controller="defaultCtrl">
+ 	<div class="panel panel-primary">
+ 		<h3 class="panel-heading">Movies</h3>
+ 		<ng-include src="'movies/movieList.html'" ng-show="displayMode == 'list'"></ng-include>
+ 		<ng-include src="'movieDetails/movieDetails.html'" ng-show="displayMode == 'details'"></ng-include>
+ 	</div>	
+</body>
+</html>

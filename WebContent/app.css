@@ -1,0 +1,36 @@
+body {
+	background-color: lightblue;
+}
+
+.navbar {
+	background-color: lightgrey;
+}
+
+.movie-wrapper {
+	margin: 15px;
+}
+
+
+.movie {
+	background-color: lightgrey;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 120px;
+}
+
+.movie:hover, movie:focus {
+	opacity: 0.8;
+	color: black;
+	text-decoration: none;
+}
+
+.movie img, movie-details img {
+	margin: 10px;
+	width: 100px;
+	height: 120px;
+}
+
+.movie-details {
+	color: white;
+}
